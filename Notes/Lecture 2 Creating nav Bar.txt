@@ -1,0 +1,52 @@
+****************************** Lecture 2 **************************
+****************** Creating Navigation ****************************
+
+Src-> Components, utils (for utilities) , data 
+
+* data, it will conatin a data that will come from api
+
+* music_courses.json
+
+***** Lets create navbar *********
+
+********** Navbar.jsx in components*******
+
+rfce, u can also write export default function
+
+* Adding navbar component within layout
+
+* If we see navvbar is imoeted using @, @ points to global directory.
+
+* We will be using aceternity ui to use components and effects. Its a opensource library
+
+* Go in documentation of this library and download the require dependencies
+
+* In utils create the file asked by the documentation
+
+* ui -> Making navbar-menu.tsx, copy and paste the source code
+
+
+*****************
+* Now if we want to use react hooks within next js then we cant use them directly, we need to add a line called 'use client'
+
+This will create it a client component, jo bhi react se dom manipulation hota hai wo client side par hota hai, so we have to write use client to make it run on a client side.
+
+* So whenever we have to use react hook we need to make it a client component
+
+**********************
+
+
+****** Navbar Component ********
+
+* Now copy the code of navbar menu in navbar comonent. We can take thw whole component but here we are going to make some change so we arent going to take the all component.
+
+* Import all the three lines
+
+* We are importing the racct, components from navbar-menu, cn
+
+* Now we will import link so that page dont reload when we use links.
+
+
+
+
+

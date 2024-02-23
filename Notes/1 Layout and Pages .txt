@@ -1,0 +1,83 @@
+************* Next JS Music Website ****************
+
+********* Lecture - 1 ***************
+
+* npx create-next-app@latest .
+
+We add . to create the next app within the same project
+
+* The project name should be in lower case
+
+* Typescript introduces the data type in js 
+
+* EsLint -> Eslinting is to find the error like comma miss etc
+
+* Src directory if u want to structure your code within src
+
+* There are two types of routing in next js :-
+
+* Page router -> Previous version
+* App router -> New version
+
+* import alias -> 
+In react we used to give path using . and / to go into a directory or to import any component, rather we can directly use alias and use @ to point the root directory.
+
+
+
+********* File Structure ***********
+* npm run dev to start a next app. Go to script within package.json and check out there
+
+* ts get compiled in js, that is why tsconfig is there which next js uses to compile it in js  
+
+* Tailwind config is also there we are gonna add alot of plugins within it later
+for animations etc.
+
+* postcss config is for teailwind
+
+* next config -> if u want to change any confriguation of next js then u can do it from here
+
+* eslintrc is the file which gives u suggestion about errors etc
+
+******** Src *************
+
+* All the files are kept here .
+* Every code is written within app
+
+* Next js mai jo bhi foler banega ya component banega to uska layout hoga and page hoga
+
+* Layout -> It is a wrapper
+* Page -> It serve the content
+
+********** Layout ************
+
+* Meta data import fist line
+* inter font, have alot of default fonts
+
+* Title and description is in meta data
+
+* Readonly<{
+  children: React.ReactNode;
+}>
+As TypeScript defines type, here typecript is saying that this root function will only accept the component which are of react react node type 
+
+* Rootlayout function :- Jo bhi children aate hai wo rootlayout render kar deta hai
+
+* Children come form pages, ye page layout se render hota hai.
+
+* After taking a children as a argument or props in a rootlayout function, readonly and reactnode is a type which is saying that the argument should be of reactnode type else the function wont accept it.
+
+* That is the use of ts we can declare the type here
+
+* Lets create a folder "chai" within app ->chai.jsx. But it will show error or wont work, we have to make every component within page. So we will create page.jsx here
+
+* Now where we can see this page, in next js the routes automatically form as we make folder within app.
+So if u run url/chai, the chai page will render there
+
+* Layout render all the pages
+
+* If we create a layout within the chai folder and also write something like "Hello World" in chai layout. And "hello root directory" within the Root Layout.
+
+And if we hit /chai request
+Then we will see both of them there along with chai.
+That is because chai layout will render chai page and then that chai layout will also be render by root layout.
+
