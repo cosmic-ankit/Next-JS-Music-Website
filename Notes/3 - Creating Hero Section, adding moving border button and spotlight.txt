@@ -1,0 +1,76 @@
+************************** Lecture 3 **************************
+*************** Creating Hero Section ***********************
+
+
+* Components -> HeroSection.tsx
+Creating a new component within and adding it directly within page.tsx
+
+* Adding Hero section within page.tex
+
+* Add it within div
+h-auto (height auto for all device)
+md:h-[40rem]  (For medium device give the height of 40 rem)
+w-full (width full)
+rounded-md (To make div rounded)
+flex
+flex-col  item-center justify-center
+relative 
+overflow hidden
+mx-auto (left aur right center mai rahe)
+
+py-10 (padding of 10)
+md:py-0 (On medium device padding of 0)
+
+* We will do the Heading in h1 and a div for a paragraph and a div for a button
+
+* For all the text, create a div
+
+div p-4 relative z-10 w-full text-center
+
+h1 :- Master the art of music 
+<p> Paragraph for text </p>
+<div mt-4 (margin top 4)>
+
+<Link href = {"/courses"}>
+Explore Courses
+</Link>
+
+  <div>
+
+
+* Take css from github
+* Add the classes within h1 and p
+
+
+
+
+
+
+************** Adding Spotlight *********
+
+* Go to documentation
+* When u scroll spotlight come
+* Do what documentation sayas
+* And then in Spoylight.tsx
+
+* Now in tailwind.config
+Add the color palette.
+* Add the highlated part, animation
+* Now create a keyframe and spotlight ka highlated part
+* Just make the opacity value string so that it can be acceptable within ts
+* Now add spotlight within herosection, also import the spotlight
+
+
+******** Moving Border for button ******
+
+* Go to moving border
+* Make moving border.tsx
+* import button from moving-border
+* Read the property of button which is below in the page and give the prop of borderradius
+* So in order to make this border radius work we need to add the plugin within tailwin css
+	
+
+
+
+ 
+	

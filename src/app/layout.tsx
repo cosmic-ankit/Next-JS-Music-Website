@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 
 //Here @ represents the root folder
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] }); // Here inter is a list containing all the fonts style
 
 export const metadata: Metadata = {
   title: "Create Next App",
